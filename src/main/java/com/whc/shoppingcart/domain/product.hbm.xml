@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+	PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Hibernate映射文件的根元素 -->
+<hibernate-mapping package="com.whc.shoppingcart.domain">
+	<!-- 每个class元素映射一个持久化类 -->
+	<class name="Product" table="product_inf" >
+		<id name="id" type="int" column="id">
+			<!-- 指定主键生成器策略 -->
+			<generator class="identity"/>
+		</id>
+		<!-- 映射普通属性 -->
+		<property name="name" type="string"/>
+		<property name="description" type="string"/>
+		<property name="price" type="float"/>
+		<property name="cal" type="int"/>
+		<property name="sku" type="string"/>
+		<property name="owner_id" type="int"/>
+		<property name="owner_name" type="int"/>
+		<!-- 映射和User实体的N-1关联 -->
+		<!-- <many-to-one name="user" column="owner_id"
+			class="User" not-null="false" /> -->
+	</class>
+</hibernate-mapping>

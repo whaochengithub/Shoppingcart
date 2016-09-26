@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: ShoppingCart Maven Webapp
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: whaochen
+Implementation-Vendor-Id: com.whc.AngularShop
+Build-Jdk: 1.8.0_60
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

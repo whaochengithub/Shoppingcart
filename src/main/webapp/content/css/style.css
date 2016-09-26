@@ -1,0 +1,23 @@
+﻿/*!
+ * Extend Bootstrap v2.3.1 to provide cell alignment (doh)
+ *
+ */
+.table td.tdRight {
+  text-align: right;
+}
+.table td.tdCenter {
+  text-align: center;
+}
+.table-nonfluid {
+   width: auto;
+}
+.right {
+    width: 180px;
+    float: right;
+}
+.left {
+    float: none; /* not needed, just for clarification */
+    /* the next props are meant to keep this block independent from the other floated one */
+    width: auto;
+    overflow: hidden;
+}​​
